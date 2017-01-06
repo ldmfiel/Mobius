@@ -1,2 +1,0 @@
-# Mobius
-Games development project.
