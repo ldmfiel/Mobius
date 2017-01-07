@@ -1,12 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobius", "Mobius.csproj", "{944FFC90-99E4-0183-9855-6076F1881872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobius.Editor", "Mobius.Editor.csproj", "{B26CFAB7-EBA9-FE82-F0E3-436C6E2873B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{944FFC90-99E4-0183-9855-6076F1881872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944FFC90-99E4-0183-9855-6076F1881872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944FFC90-99E4-0183-9855-6076F1881872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944FFC90-99E4-0183-9855-6076F1881872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B26CFAB7-EBA9-FE82-F0E3-436C6E2873B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B26CFAB7-EBA9-FE82-F0E3-436C6E2873B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B26CFAB7-EBA9-FE82-F0E3-436C6E2873B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B26CFAB7-EBA9-FE82-F0E3-436C6E2873B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
