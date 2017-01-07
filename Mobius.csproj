@@ -158,8 +158,10 @@
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoCameraController.cs" />
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoRuntimeSpriteController.cs" />
+    <Compile Include="Assets\_GameScripts\Control\PlayerControlComponent.cs" />
     <Compile Include="Assets\_GameScripts\Game\WrappingObjectComponent.cs" />
-    <Compile Include="Assets\_GameScripts\Prototyping\MoveObjectInDirectionComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Movement\MoveObjectInDirectionComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Movement\PlayerMovementComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />

@@ -92,9 +92,11 @@ MonoBehaviour:
     flipped: 0
     complexGeometry: 0
     physicsEngine: 1
-    colliderType: 0
+    colliderType: 2
     customColliders: []
-    colliderVertices: []
+    colliderVertices:
+    - {x: 0, y: 0, z: 0}
+    - {x: 16, y: 16, z: 0.1}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -166,7 +168,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 0.5
-  buildKey: 1513538803
+  buildKey: 1512056957
   dataGuid: e7801a02204d35441bf05aeefaab1e1d
   managedSpriteCollection: 0
   hasPlatformData: 0

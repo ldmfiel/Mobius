@@ -111,7 +111,7 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 0
+    colliderType: 2
     colliderData: []
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 0, y: 0}
@@ -152,11 +152,17 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 0
+    colliderType: 4
     colliderData: []
     boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
-    polyColliderIslands: []
+    boxColliderMax: {x: 32, y: 32}
+    polyColliderIslands:
+    - connected: 1
+      points:
+      - {x: 16, y: 16}
+      - {x: 0, y: 32}
+      - {x: 32, y: 32}
+      - {x: 32, y: 0}
     polyColliderCap: 1
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
