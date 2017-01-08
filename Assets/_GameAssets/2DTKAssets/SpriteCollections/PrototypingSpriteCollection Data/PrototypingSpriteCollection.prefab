@@ -141,14 +141,27 @@ MonoBehaviour:
     flipped: 0
     complexGeometry: 0
     physicsEngine: 1
-    colliderType: 0
+    colliderType: 3
     customColliders: []
-    colliderVertices: []
-    colliderIndicesFwd: 
-    colliderIndicesBack: 
+    colliderVertices:
+    - {x: 0, y: 0, z: -0.1}
+    - {x: 0, y: 0, z: 0.1}
+    - {x: -16, y: -16, z: -0.1}
+    - {x: -16, y: -16, z: 0.1}
+    - {x: 16, y: -16, z: -0.1}
+    - {x: 16, y: -16, z: 0.1}
+    - {x: 16, y: 16, z: -0.1}
+    - {x: 16, y: 16, z: 0.1}
+    colliderIndicesFwd: 020000000300000000000000000000000300000001000000040000000300000002000000040000000500000003000000060000000500000004000000060000000700000005000000000000000100000006000000060000000100000007000000000000000600000004000000040000000200000000000000050000000700000001000000010000000300000005000000
+    colliderIndicesBack: 000000000300000002000000010000000300000000000000020000000300000004000000030000000500000004000000040000000500000006000000050000000700000006000000060000000100000000000000070000000100000006000000040000000600000000000000000000000200000004000000010000000700000005000000050000000300000001000000
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
+    polygonCollider2D:
+    - points:
+      - {x: 0, y: 0}
+      - {x: -16, y: -16}
+      - {x: 16, y: -16}
+      - {x: 16, y: 16}
     edgeCollider2D: []
     attachPoints: []
   premultipliedAlpha: 0
@@ -168,7 +181,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 0.5
-  buildKey: 1512056957
+  buildKey: 1780146548
   dataGuid: e7801a02204d35441bf05aeefaab1e1d
   managedSpriteCollection: 0
   hasPlatformData: 0

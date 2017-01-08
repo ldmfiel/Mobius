@@ -159,6 +159,10 @@
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoRuntimeSpriteController.cs" />
     <Compile Include="Assets\_GameScripts\Control\PlayerControlComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Game\KillVolumeComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Game\LevelExitComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Game\PlatformComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Game\PlayerSpawnComponent.cs" />
     <Compile Include="Assets\_GameScripts\Game\WrappingObjectComponent.cs" />
     <Compile Include="Assets\_GameScripts\Movement\MoveObjectInDirectionComponent.cs" />
     <Compile Include="Assets\_GameScripts\Movement\PlayerMovementComponent.cs" />
