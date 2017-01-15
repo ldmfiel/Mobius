@@ -17,3 +17,9 @@ EditorBuildSettings:
     path: Assets/_GameAssets/Levels/TestLevel5.unity
   - enabled: 1
     path: Assets/_GameAssets/Levels/TestLevel6.unity
+  - enabled: 1
+    path: Assets/_GameAssets/Levels/TestLevel7.unity
+  - enabled: 1
+    path: Assets/_GameAssets/Levels/TestLevel8.unity
+  - enabled: 1
+    path: Assets/_GameAssets/Levels/TestLevel9.unity

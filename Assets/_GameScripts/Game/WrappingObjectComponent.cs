@@ -7,6 +7,7 @@ public class WrappingObjectComponent : MonoBehaviour {
     bool bCanWrap = true;
     public bool bWrapVert;
     public bool bWrapHoriz;
+    public bool bLosesCollison;
 
     Camera cameraObject;
     Vector3 screenBottomLeft, screenTopRight;
@@ -80,18 +81,7 @@ public class WrappingObjectComponent : MonoBehaviour {
 
     //Position Ghosts so that they will be on the screen as the main objects leaves the screen.
     void PositionGhosts(int ghostRequirement)
-    {
-        Vector2 velocity = new Vector2();
-        Vector2 oldVelocity = new Vector2();
-
-        if (GetComponent<Rigidbody2D>() != null)
-        {
-            oldVelocity = GetComponent<Rigidbody2D>().velocity;
-            velocity = GetComponent<Rigidbody2D>().velocity;
-            velocity.y = 0;
-
-            GetComponent<Rigidbody2D>().velocity = velocity;
-        }
+    {       
 
         // All ghost positions will be relative to the owner transform,
         Vector3 ghostPosition = transform.position;
@@ -154,10 +144,7 @@ public class WrappingObjectComponent : MonoBehaviour {
             ghosts[i].transform.rotation = transform.rotation;
         }
 
-        if (GetComponent<Rigidbody2D>() != null)
-        {
-            GetComponent<Rigidbody2D>().velocity = oldVelocity;
-        }
+
     }
 
     void SwapGhosts()
@@ -175,6 +162,10 @@ public class WrappingObjectComponent : MonoBehaviour {
                         transform.position = ghost.transform.position;
                         bCanWrap = false;
                         Invoke("ResetWrapping", 0.1f);
+
+                        if(bLosesCollison)
+                            GetComponent<BoxCollider2D>().isTrigger = true;
+
                         break;
                     }
                 }

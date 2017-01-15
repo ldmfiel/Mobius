@@ -13,6 +13,7 @@ public class PlayerMovementComponent : MonoBehaviour {
     public float JumpVelocity = 400 ;
 
     public LayerMask FloorMask;
+    public bool onFloor;
     MoveObjectInDirectionComponent movingObject;
 
     // Use this for initialization
@@ -28,7 +29,7 @@ public class PlayerMovementComponent : MonoBehaviour {
     public void Walk(Vector2 InputDirection)
     {
         Vector3 velocity = rigidbody2D.velocity;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(0, -1), 33, FloorMask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(0, -1),17, FloorMask);
 
         if(velocity.x < 0)
             velocity.x += (WalkDeceleration * Time.deltaTime);
@@ -57,11 +58,14 @@ public class PlayerMovementComponent : MonoBehaviour {
 
                     Debug.Log(velocity);
                 }
-            }              
+            }
+
+            onFloor = true;            
         }
         else
         {
             movingObject = null;
+            onFloor = false;
         }
 
         rigidbody2D.velocity = velocity;

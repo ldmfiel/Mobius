@@ -22,14 +22,23 @@ MonoBehaviour:
   tilePrefabs:
   - {fileID: 0}
   - {fileID: 0}
-  tileInfo: []
+  - {fileID: 0}
+  tileInfo:
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
   tileMapLayers:
   - name: Layer 0
     hash: 1892887448
     useColor: 1
     generateCollider: 1
     z: 0
-    unityLayer: 0
+    unityLayer: 9
     sortingLayerName: 
     sortingOrder: 0
     skipMeshGeneration: 0
