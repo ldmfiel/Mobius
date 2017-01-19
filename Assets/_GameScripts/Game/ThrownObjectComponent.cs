@@ -11,6 +11,8 @@ public class ThrownObjectComponent : MonoBehaviour {
     public LayerMask objectMask;
 
     RaycastHit2D[] raycasts;
+    public bool CanTeleportTo = false;
+
 
 	// Use this for initialization
 	void Start () {
@@ -21,11 +23,12 @@ public class ThrownObjectComponent : MonoBehaviour {
 
     void Update()
     {
-        // While object has no collision check if it is in objects or falling down.
-        if(box.isTrigger)
-        {
+        RaycastHit2D floorCheck = Physics2D.Linecast(transform.position, new Vector2(transform.position.x, transform.position.y) + (Vector2.down * 17), objectMask);
 
-            raycasts = Physics2D.BoxCastAll(transform.position, box.size / 2, 0, Vector2.zero, 1.0f, objectMask);
+        // While object has no collision check if it is in objects or falling down.
+        if (box.isTrigger)
+        {
+            raycasts = Physics2D.BoxCastAll(transform.position, box.size, 0, Vector2.zero, 1.0f, objectMask);
             bool inObject = raycasts.Length > 0;
             Debug.Log(inObject);
 
@@ -35,13 +38,22 @@ public class ThrownObjectComponent : MonoBehaviour {
                 GetComponent<BoxCollider2D>().isTrigger = false;
             }
         }
+        else
+        {
+            if (floorCheck && !CanTeleportTo)
+            {
+                CanTeleportTo = true;
+            }
+        }
+
         
     }
 
-    public void StartThrow(float newDistance,Vector2 dir)
+    public void StartThrow(float newDistance,Vector2 dir, Vector3 offset)
     {
         Debug.Log(Vector3.right);
-        Vector2 position = transform.position;
+        Vector2 position = transform.position + offset;
+        transform.position = position;
         rigidbody2D.velocity = CalculateInitialVelocity(position + dir * newDistance,1.0f);
     }
 

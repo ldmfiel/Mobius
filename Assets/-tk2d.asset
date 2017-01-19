@@ -708,6 +708,6 @@ MonoBehaviour:
     - 1390860722
     - 1390860719
     managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
+    loadable: 1
+    assetName: PrototypingSpriteCollection
     version: 3

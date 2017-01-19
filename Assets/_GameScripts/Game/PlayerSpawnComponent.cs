@@ -5,11 +5,18 @@ using UnityEngine;
 public class PlayerSpawnComponent : MonoBehaviour {
     public GameObject playerPrefab;
 
+    GameObject player;
+
     void Start()
     {
-        if(GameObject.Find("PlayerObject") == null)
+
+    }
+
+    public void SpawnPlayer()
+    {
+        if (GameObject.Find("PlayerObject") == null)
         {
-            Instantiate(playerPrefab, transform.position, new Quaternion(0, 0, 0,0));
+            player = Instantiate(playerPrefab, transform.position, new Quaternion(0, 0, 0, 0));
         }
     }
 }

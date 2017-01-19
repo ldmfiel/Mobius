@@ -226,11 +226,11 @@ MonoBehaviour:
   allowMultipleAtlases: 0
   spriteCollectionGUID: a68743c54f1929b4390ded7a860f5e67
   spriteCollectionName: PrototypingSpriteCollection
-  assetName: 
-  loadable: 0
+  assetName: PrototypingSpriteCollection
+  loadable: 1
   invOrthoSize: 2
   halfTargetHeight: 0.5
-  buildKey: 443980493
+  buildKey: 1347985192
   dataGuid: e7801a02204d35441bf05aeefaab1e1d
   managedSpriteCollection: 0
   hasPlatformData: 0

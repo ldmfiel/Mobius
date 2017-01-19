@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb356b9a6a1da084695128b00c8721be, type: 3}
-  m_Name: tileMapData
+  m_Name: tileMapData1
   m_EditorClassIdentifier: 
   tileSize: {x: 32, y: 32, z: 0}
   tileOrigin: {x: -16, y: -16, z: 0}
@@ -23,26 +23,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  tileInfo:
-  - stringVal: 
-    intVal: 0
-    floatVal: 0
-    enablePrefabOffset: 0
-  - stringVal: 
-    intVal: 0
-    floatVal: 0
-    enablePrefabOffset: 0
-  - stringVal: 
-    intVal: 0
-    floatVal: 0
-    enablePrefabOffset: 0
+  tileInfo: []
   tileMapLayers:
   - name: Layer 0
     hash: 1892887448
     useColor: 1
     generateCollider: 1
     z: 0
-    unityLayer: 9
+    unityLayer: 0
     sortingLayerName: 
     sortingOrder: 0
     skipMeshGeneration: 0

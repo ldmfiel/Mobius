@@ -31,7 +31,7 @@ MonoBehaviour:
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 0
-    brushHash: -983660736
+    brushHash: -1404384768
   activeBrush:
     name: 
     type: 0
@@ -40,13 +40,13 @@ MonoBehaviour:
     - x: 0
       y: 0
       layer: 0
-      spriteId: 2
+      spriteId: 1
       blendAmount: 0
-    multiSelectTiles: 02000000
+    multiSelectTiles: 01000000
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 0
-    brushHash: -1340667968
+    brushHash: -1886251200
   brushes: []
   paletteBrush:
     name: 
@@ -72,9 +72,9 @@ MonoBehaviour:
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 1
-    brushHash: 1386908866
+    brushHash: -794812222
   paletteTilesPerRow: 2
-  setupMode: 16
+  setupMode: 32
   showBrush: 1
   showPalette: 1
   layer: 0

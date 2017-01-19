@@ -16,11 +16,18 @@ public class PlayerThrowComponent : MonoBehaviour {
 		
 	}
 
-    public GameObject QuickThrow(Vector2 direction)
+    public GameObject QuickThrow(Vector2 direction, float distance = 150)
     {
         GameObject thrownObject = Instantiate(throwingObject, transform.position, transform.rotation);
 
-        thrownObject.GetComponent<ThrownObjectComponent>().StartThrow(150,direction);
+        if(direction == Vector2.down)
+        {
+            thrownObject.GetComponent<ThrownObjectComponent>().StartThrow(distance, direction, new Vector3(0,-32));
+        }
+        else
+        {
+            thrownObject.GetComponent<ThrownObjectComponent>().StartThrow(distance, direction, Vector2.zero);
+        }       
 
         return thrownObject;
     }

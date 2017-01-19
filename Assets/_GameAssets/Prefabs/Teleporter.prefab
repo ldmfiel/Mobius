@@ -93,7 +93,7 @@ MonoBehaviour:
   InitialAngle: 360
   objectMask:
     serializedVersion: 2
-    m_Bits: 513
+    m_Bits: 512
 --- !u!114 &114420351979363764
 MonoBehaviour:
   m_ObjectHideFlags: 1

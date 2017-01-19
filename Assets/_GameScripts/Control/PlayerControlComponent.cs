@@ -32,6 +32,8 @@ public class PlayerControlComponent : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         InputAxis.x = Input.GetAxis("Horizontal");
+        InputAxis.y = Input.GetAxis("Vertical");
+
         if(state == EControlState.PLAY)
         {
             if (movement)
@@ -60,17 +62,47 @@ public class PlayerControlComponent : MonoBehaviour {
 
             if(throwing)
             {
-                if(Input.GetButtonDown("Fire1") && Teleporters[0] == null)
+                if(InputAxis.y == 0)
                 {
-                    Teleporters[0] = throwing.QuickThrow(FacingDirection);
-
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        if (Teleporters[0] != null && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
+                            Destroy(Teleporters[0]);
+                        if (Teleporters[0] == null)
+                            Teleporters[0] = throwing.QuickThrow(FacingDirection);                           
+                    }
                 }
+                else if(InputAxis.y > 0)
+                {
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        if (Teleporters[0] != null && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
+                            Destroy(Teleporters[0]);
+                        if (Teleporters[0] == null)
+                            Teleporters[0] = throwing.QuickThrow(Vector2.up,300);
+
+                    }
+                }
+                else if(InputAxis.y < 0)
+                {
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        if (Teleporters[0] != null && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
+                            Destroy(Teleporters[0]);
+                        if(Teleporters[0] == null)
+                            Teleporters[0] = throwing.QuickThrow(Vector2.down, 150);
+                    }
+                }
+
 
                 if(Input.GetButtonDown("Fire2") && Teleporters[0])
                 {
-                    Debug.Log(Teleporters[0].transform.position);
-                    transform.position = Teleporters[0].transform.position + new Vector3(-16*FacingDirection.x,16);
-                    Destroy(Teleporters[0]);
+                    if(!Teleporters[0].GetComponent<BoxCollider2D>().isTrigger && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
+                    {
+                        Debug.Log(Teleporters[0].transform.position);
+                        transform.position = Teleporters[0].transform.position + new Vector3(16 * FacingDirection.x, 16);
+                        Destroy(Teleporters[0]);
+                    }
                 }
             }
         }       

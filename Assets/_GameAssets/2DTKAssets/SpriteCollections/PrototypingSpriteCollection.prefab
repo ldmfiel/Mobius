@@ -66,7 +66,7 @@ MonoBehaviour:
     spriteCollection: {fileID: 0}
   managedSpriteCollection: 0
   linkParent: {fileID: 0}
-  loadable: 0
+  loadable: 1
   atlasFormat: 0
   maxTextureSize: 2048
   forceTextureSize: 0
@@ -246,5 +246,5 @@ MonoBehaviour:
   autoUpdate: 1
   editorDisplayScale: 1
   version: 4
-  assetName: 
+  assetName: PrototypingSpriteCollection
   linkedSpriteCollections: []

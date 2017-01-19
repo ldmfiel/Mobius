@@ -93,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bWrapVert: 1
   bWrapHoriz: 1
+  bLosesCollison: 0
   screenWidth: 0
   screenHeight: 0
   ghostPref: {fileID: 1216316156580842, guid: 568b52b3e0f2cf14b978bffeb7d7d974, type: 2}
@@ -114,6 +115,7 @@ MonoBehaviour:
   FloorMask:
     serializedVersion: 2
     m_Bits: 512
+  onFloor: 0
 --- !u!114 &114835672697351946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,6 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FacingDirection: {x: 1, y: 0}
+  Teleporters: []
 --- !u!114 &114899815097392822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,7 +172,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 9a636ac6a08843b48a6c450ea080b645, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

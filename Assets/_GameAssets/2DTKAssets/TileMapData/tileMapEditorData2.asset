@@ -1,0 +1,1246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b78d6060eadde4394ed1d0ba2b8c97, type: 3}
+  m_Name: tileMapEditorData2
+  m_EditorClassIdentifier: 
+  editMode: 0
+  brushColor: {r: 1, g: 1, b: 1, a: 1}
+  brushRadius: 1
+  blendStrength: 1
+  blendMode: 0
+  brushDisplayScale: 1
+  defaultBrush:
+    name: 
+    type: 0
+    paintMode: 0
+    tiles:
+    - x: 0
+      y: 0
+      layer: 0
+      spriteId: 0
+      blendAmount: 0
+    multiSelectTiles: 
+    edgeMode: 0
+    multiLayer: 0
+    overrideWithSpriteBounds: 0
+    brushHash: -476215680
+  activeBrush:
+    name: 
+    type: 3
+    paintMode: 0
+    tiles:
+    - x: 0
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 1
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 2
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 3
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 4
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 5
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 6
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 7
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 8
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 9
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 10
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 11
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 12
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 13
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 14
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 15
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 16
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 17
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 18
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 19
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 20
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 21
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 22
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 23
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 24
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 25
+      y: 8
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 0
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 1
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 2
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 3
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 4
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 5
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 6
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 7
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 8
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 9
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 10
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 11
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 12
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 13
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 14
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 15
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 16
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 17
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 18
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 19
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 20
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 21
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 22
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 23
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 24
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 25
+      y: 7
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 0
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 1
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 2
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 3
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 4
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 5
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 6
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 7
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 8
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 9
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 10
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 11
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 12
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 13
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 14
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 15
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 16
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 17
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 18
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 19
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 20
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 21
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 22
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 23
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 24
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 25
+      y: 6
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 0
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 1
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 2
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 3
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 4
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 5
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 6
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 7
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 8
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 9
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 10
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 11
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 12
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 13
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 14
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 15
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 16
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 17
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 18
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 19
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 20
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 21
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 22
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 23
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 24
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 25
+      y: 5
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 0
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 1
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 2
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 3
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 4
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 5
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 6
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 7
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 8
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 9
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 10
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 11
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 12
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 13
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 14
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 15
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 16
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 17
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 18
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 19
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 20
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 21
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 22
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 23
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 24
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 25
+      y: 4
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 0
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 1
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 2
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 3
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 4
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 5
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 6
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 7
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 8
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 9
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 10
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 11
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 12
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 13
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 14
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 15
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 16
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 17
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 18
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 19
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 20
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 21
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 22
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 23
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 24
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 25
+      y: 3
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 0
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 1
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 2
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 3
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 4
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 5
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 6
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 7
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 8
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 9
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 10
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 11
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 12
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 13
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 14
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 15
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 16
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 17
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 18
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 19
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 20
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 21
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 22
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 23
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 24
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 25
+      y: 2
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 0
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 1
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 2
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 3
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 4
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 5
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 6
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 7
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 8
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 9
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 10
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 11
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 12
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 13
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 14
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 15
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 16
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 17
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 18
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 19
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 20
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 21
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 22
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 23
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 24
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 25
+      y: 1
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 0
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 1
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 2
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 3
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 4
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 5
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 6
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 7
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 8
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 9
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 10
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 11
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 12
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 13
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 14
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 15
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 16
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 17
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 18
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 19
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 20
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 21
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 22
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 23
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 24
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    - x: 25
+      y: 0
+      layer: 0
+      spriteId: -1
+      blendAmount: 0
+    multiSelectTiles: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    edgeMode: 0
+    multiLayer: 0
+    overrideWithSpriteBounds: 0
+    brushHash: 389631938
+  brushes: []
+  paletteBrush:
+    name: 
+    type: 0
+    paintMode: 0
+    tiles:
+    - x: 0
+      y: 0
+      layer: 0
+      spriteId: 0
+      blendAmount: 0
+    - x: 1
+      y: 0
+      layer: 0
+      spriteId: 1
+      blendAmount: 0
+    - x: 2
+      y: 0
+      layer: 0
+      spriteId: 2
+      blendAmount: 0
+    multiSelectTiles: 
+    edgeMode: 0
+    multiLayer: 0
+    overrideWithSpriteBounds: 1
+    brushHash: -1001064384
+  paletteTilesPerRow: 8
+  setupMode: 0
+  showBrush: 1
+  showPalette: 1
+  layer: 0
+  scratchpads: []
