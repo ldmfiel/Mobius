@@ -76,7 +76,7 @@ public class PlayerControlComponent : MonoBehaviour {
                         if (Teleporters[0] != null && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
                             Destroy(Teleporters[0]);
                         if (Teleporters[0] == null)
-                            Teleporters[0] = throwing.QuickThrow(FacingDirection);                           
+                            Teleporters[0] = throwing.QuickThrow(FacingDirection,200);                           
                     }
                 }
                 else if(InputAxis.y > 0)
@@ -107,7 +107,7 @@ public class PlayerControlComponent : MonoBehaviour {
                     if(!Teleporters[0].GetComponent<BoxCollider2D>().isTrigger && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
                     {
                         Debug.Log(Teleporters[0].transform.position);
-                        transform.position = Teleporters[0].transform.position + new Vector3(16 * FacingDirection.x, 16);
+                        transform.position = Teleporters[0].transform.position + new Vector3(0,33);
                         Destroy(Teleporters[0]);
                     }
                 }

@@ -29,7 +29,7 @@ public class PlayerMovementComponent : MonoBehaviour {
     public void Walk(Vector2 InputDirection)
     {
         Vector3 velocity = rigidbody2D.velocity;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(0, -1),17, FloorMask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(0, -1),33, FloorMask);
 
         if(velocity.x < 0)
             velocity.x += (WalkDeceleration * Time.deltaTime);

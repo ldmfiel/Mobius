@@ -36,7 +36,7 @@ public class ThrownObjectComponent : MonoBehaviour {
 
             if (rigidbody2D.velocity.y < 0 && !inObject)
             {
-                box.offset = new Vector2(0, 0);
+
                 GetComponent<BoxCollider2D>().isTrigger = false;
             }
         }
