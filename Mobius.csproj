@@ -159,18 +159,17 @@
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoRuntimeSpriteController.cs" />
     <Compile Include="Assets\TileMapTestScript.cs" />
-    <Compile Include="Assets\_GameScripts\Control\PlayerControlComponent.cs" />
-    <Compile Include="Assets\_GameScripts\Game\DestroyThrownObjects.cs" />
-    <Compile Include="Assets\_GameScripts\Game\KillVolumeComponent.cs" />
-    <Compile Include="Assets\_GameScripts\Game\LevelExitComponent.cs" />
-    <Compile Include="Assets\_GameScripts\Game\PlatformComponent.cs" />
-    <Compile Include="Assets\_GameScripts\Game\PlayerSpawnComponent.cs" />
-    <Compile Include="Assets\_GameScripts\Game\PlayerThrowComponent.cs" />
     <Compile Include="Assets\_GameScripts\Game\RoomController.cs" />
-    <Compile Include="Assets\_GameScripts\Game\ThrownObjectComponent.cs" />
     <Compile Include="Assets\_GameScripts\Game\WrappingObjectComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Level\DestroyThrownObjects.cs" />
+    <Compile Include="Assets\_GameScripts\Level\KillVolumeComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Level\LevelExitComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Level\PlayerSpawnComponent.cs" />
     <Compile Include="Assets\_GameScripts\Movement\MoveObjectInDirectionComponent.cs" />
-    <Compile Include="Assets\_GameScripts\Movement\PlayerMovementComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Player\PlayerControlComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Player\PlayerMovementComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Player\PlayerThrowComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Player\ThrownObjectComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />

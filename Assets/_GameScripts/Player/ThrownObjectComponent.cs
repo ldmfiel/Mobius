@@ -28,7 +28,9 @@ public class ThrownObjectComponent : MonoBehaviour {
         // While object has no collision check if it is in objects or falling down.
         if (box.isTrigger)
         {
+            // Inside Object check
             raycasts = Physics2D.BoxCastAll(transform.position, box.size, 0, Vector2.zero, 1.0f, objectMask);
+
             bool inObject = raycasts.Length > 0;
             Debug.Log(inObject);
 
@@ -38,8 +40,10 @@ public class ThrownObjectComponent : MonoBehaviour {
                 GetComponent<BoxCollider2D>().isTrigger = false;
             }
         }
+        //While objects collision is on
         else
         {
+            // When object hits the floor let player teleport to object
             if (floorCheck && !CanTeleportTo)
             {
                 CanTeleportTo = true;
@@ -49,6 +53,7 @@ public class ThrownObjectComponent : MonoBehaviour {
         
     }
 
+    // Set initial to throw object to dir*newDistance+offset
     public void StartThrow(float newDistance,Vector2 dir, Vector3 offset)
     {
         Debug.Log(Vector3.right);

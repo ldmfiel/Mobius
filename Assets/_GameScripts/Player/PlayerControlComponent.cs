@@ -34,6 +34,12 @@ public class PlayerControlComponent : MonoBehaviour {
         InputAxis.x = Input.GetAxis("Horizontal");
         InputAxis.y = Input.GetAxis("Vertical");
 
+        /* Begin Play State Controls 
+        * Movement
+        * Jumping
+        * Teleporting
+        * Combat
+        */
         if(state == EControlState.PLAY)
         {
             if (movement)
@@ -62,6 +68,7 @@ public class PlayerControlComponent : MonoBehaviour {
 
             if(throwing)
             {
+                // Throw Object based on input direction, will be re-writing this when weapons are added
                 if(InputAxis.y == 0)
                 {
                     if (Input.GetButtonDown("Fire1"))
@@ -79,7 +86,7 @@ public class PlayerControlComponent : MonoBehaviour {
                         if (Teleporters[0] != null && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
                             Destroy(Teleporters[0]);
                         if (Teleporters[0] == null)
-                            Teleporters[0] = throwing.QuickThrow(Vector2.up,300);
+                            Teleporters[0] = throwing.QuickThrow(Vector2.up,150);
 
                     }
                 }
@@ -94,7 +101,7 @@ public class PlayerControlComponent : MonoBehaviour {
                     }
                 }
 
-
+                // Teleport to the teleporter
                 if(Input.GetButtonDown("Fire2") && Teleporters[0])
                 {
                     if(!Teleporters[0].GetComponent<BoxCollider2D>().isTrigger && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
