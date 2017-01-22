@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EControlState
+{
+    PLAY,
+    PAUSED,
+    DIALOGUE,
+    UI
+}
+
+
 public class PlayerControlComponent : MonoBehaviour {
 
-    enum EControlState
-    {
-        PLAY,
-        PAUSED,
-        DIALOGUE
-    }
 
 
     PlayerMovementComponent movement;
@@ -22,11 +25,14 @@ public class PlayerControlComponent : MonoBehaviour {
     public GameObject[] Teleporters;
     int MaxTeleporters = 1;
 
+    SpriteRenderer spriteRender;
+
 	// Use this for initialization
 	void Start () {
         Teleporters = new GameObject[MaxTeleporters];
         movement = GetComponent<PlayerMovementComponent>();
         throwing = GetComponent<PlayerThrowComponent>();
+        spriteRender = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -49,15 +55,25 @@ public class PlayerControlComponent : MonoBehaviour {
                 if(InputAxis.x < 0)
                 {
                     FacingDirection = Vector2.left;
+                    spriteRender.flipX = true;
                 }
                 else if (InputAxis.x > 0)
                 {
                     FacingDirection = Vector2.right;
+                    spriteRender.flipX = false;
                 }
 
                 if (Input.GetButtonDown("Jump") && movement.onFloor)
                 {
-                    movement.DoJump();
+                    if(Input.GetAxis("Vertical") < 0)
+                    {
+                        movement.DoJump(true);
+                    }
+                    else
+                    {
+                        movement.DoJump(false);
+                    }
+                    
                 }
 
                 if (Input.GetButtonUp("Jump"))
@@ -76,7 +92,7 @@ public class PlayerControlComponent : MonoBehaviour {
                         if (Teleporters[0] != null && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
                             Destroy(Teleporters[0]);
                         if (Teleporters[0] == null)
-                            Teleporters[0] = throwing.QuickThrow(FacingDirection,200);                           
+                            Teleporters[0] = throwing.QuickThrow(FacingDirection,220);                           
                     }
                 }
                 else if(InputAxis.y > 0)
@@ -113,9 +129,18 @@ public class PlayerControlComponent : MonoBehaviour {
                 }
             }
         }       
-       
-   
 	}
+
+    public void SwitchState(EControlState newState)
+    {
+        switch (state)
+        {
+            default:
+                break;
+        }
+
+        state = newState;      
+    }
 
 
 }

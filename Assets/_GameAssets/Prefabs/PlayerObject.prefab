@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4308108296912984}
   - component: {fileID: 212045896318008094}
-  - component: {fileID: 114551789599208770}
   - component: {fileID: 50741107348908168}
   - component: {fileID: 114835672697351946}
   - component: {fileID: 114583570332929082}
@@ -40,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1650380074306240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -606, y: 262, z: 0}
+  m_LocalPosition: {x: -353.94614, y: 221.05888, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,26 +76,9 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: bd40465315d68094fa88862f06a5ccc2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -4.9}
   serializedVersion: 2
-  m_Size: {x: 32, y: 64}
---- !u!114 &114551789599208770
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1650380074306240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af4d44c90a6b79c4ebb94e5c435c2df6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bWrapVert: 1
-  bWrapHoriz: 1
-  bLosesCollison: 0
-  screenWidth: 0
-  screenHeight: 0
-  ghostPref: {fileID: 1216316156580842, guid: 568b52b3e0f2cf14b978bffeb7d7d974, type: 2}
+  m_Size: {x: 19.8, y: 53.93}
 --- !u!114 &114583570332929082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +94,7 @@ MonoBehaviour:
   WalkDeceleration: 50
   Jumping: 0
   JumpVelocity: 240
+  CrouchJumpBonus: 60
   FloorMask:
     serializedVersion: 2
     m_Bits: 512

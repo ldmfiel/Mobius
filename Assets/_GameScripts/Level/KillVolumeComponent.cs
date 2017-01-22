@@ -18,9 +18,13 @@ public class KillVolumeComponent : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Player")
+        {
             DestroyObject(col.gameObject);
+            Invoke("ResetLevel", 1);
+        }
+           
 
-        Invoke("ResetLevel", 1);
+        
 
     }
 

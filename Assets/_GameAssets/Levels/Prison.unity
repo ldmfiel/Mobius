@@ -163,11 +163,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4775129848908030, guid: f69e7e3dea136a44b8b3d736ff030a17, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.8
+      value: 27.7
       objectReference: {fileID: 0}
     - target: {fileID: 4775129848908030, guid: f69e7e3dea136a44b8b3d736ff030a17, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 272.8
+      value: 273.2
       objectReference: {fileID: 0}
     - target: {fileID: 4775129848908030, guid: f69e7e3dea136a44b8b3d736ff030a17, type: 2}
       propertyPath: m_LocalPosition.z
@@ -195,11 +195,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4775129848908030, guid: f69e7e3dea136a44b8b3d736ff030a17, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.428278
+      value: 0.5036604
       objectReference: {fileID: 0}
     - target: {fileID: 4775129848908030, guid: f69e7e3dea136a44b8b3d736ff030a17, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.75811714
+      value: 0.7813117
       objectReference: {fileID: 0}
     - target: {fileID: 114969509883827772, guid: f69e7e3dea136a44b8b3d736ff030a17,
         type: 2}
@@ -211,9 +211,38 @@ Prefab:
       propertyPath: nextSpawnPoint
       value: DoorSpawn
       objectReference: {fileID: 0}
+    - target: {fileID: 212558667269666792, guid: f69e7e3dea136a44b8b3d736ff030a17,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61348589185344534, guid: f69e7e3dea136a44b8b3d736ff030a17,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -45.26
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f69e7e3dea136a44b8b3d736ff030a17, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &161492859 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1584814582684588, guid: f69e7e3dea136a44b8b3d736ff030a17,
+    type: 2}
+  m_PrefabInternal: {fileID: 161492858}
+--- !u!61 &161492860
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 161492859}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 63.999996, y: 128}
 --- !u!1 &201486118
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +589,7 @@ GameObject:
   - component: {fileID: 305567604}
   - component: {fileID: 305567603}
   - component: {fileID: 305567602}
+  - component: {fileID: 305567607}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -635,6 +665,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &305567607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 305567601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21e41e642be1cb4cb1b76aeea4534b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScreenWidth: 848
+  ScreenHeight: 480
+  PixelsPerUnit: 1
 --- !u!1 &444410158
 GameObject:
   m_ObjectHideFlags: 0

@@ -699,14 +699,17 @@ MonoBehaviour:
     - DarkGrey_Box32x32
     - DarkGrey_Angle32x32
     - Orange_Box32x32
+    - BLank
     spriteTextureGUIDs:
     - 389a1c9b35f81b546abf22c876a69e25
     - bf808bf758905c04c9d229beb2940edd
     - 9a636ac6a08843b48a6c450ea080b645
+    - 3815eeb3a20969e4e8d7de0f81c68137
     spriteTextureTimeStamps:
     - 1390860713
     - 1390860722
     - 1390860719
+    - 1485117988.44989
     managedSpriteCollection: 0
     loadable: 1
     assetName: PrototypingSpriteCollection
