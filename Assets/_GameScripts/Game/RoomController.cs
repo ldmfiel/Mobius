@@ -29,10 +29,14 @@ public class RoomController : MonoBehaviour {
 		for(int i = 0; i < Rooms.Length; i++)
         {
             rooms.Add(Rooms[i].RoomName,Rooms[i]);
+
+            if(Rooms[i].RoomName == CurrentRoomName)
+            {
+                CurrentRoom = Rooms[i];
+            }
         }
 
-        // Set thestarting room struct
-        CurrentRoom = Rooms[0];
+
 
         SceneManager.sceneLoaded += OnSceneLoad;
 
@@ -47,6 +51,7 @@ public class RoomController : MonoBehaviour {
 
         if(defaultSpawn)
         {
+            Debug.Log(CurrentRoom.DefaultSpawn);
             playerSpawn = GameObject.Find(CurrentRoom.DefaultSpawn);
             playerSpawn.GetComponent<PlayerSpawnComponent>().SpawnPlayer();
         }

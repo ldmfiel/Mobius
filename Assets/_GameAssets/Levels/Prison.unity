@@ -221,6 +221,14 @@ Prefab:
       propertyPath: m_Offset.x
       value: -45.26
       objectReference: {fileID: 0}
+    - target: {fileID: 4422769010316672, guid: f69e7e3dea136a44b8b3d736ff030a17, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4422769010316672, guid: f69e7e3dea136a44b8b3d736ff030a17, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f69e7e3dea136a44b8b3d736ff030a17, type: 2}
   m_IsPrefabParent: 0
@@ -277,7 +285,7 @@ MonoBehaviour:
   renderData: {fileID: 618121398}
   spriteCollection: {fileID: 114410769738722692, guid: e7801a02204d35441bf05aeefaab1e1d,
     type: 2}
-  spriteCollectionKey: 256076528
+  spriteCollectionKey: 253675959
   width: 128
   height: 128
   partitionSizeX: 32
@@ -403,7 +411,7 @@ MonoBehaviour:
     numRows: 0
     divX: 0
     divY: 0
-  prefabsRoot: {fileID: 902142863}
+  prefabsRoot: {fileID: 978805514}
   tilePrefabsList: []
   _inEditMode: 0
   serializedMeshPath: 
@@ -1027,7 +1035,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1193432064}
-  - {fileID: 902142864}
+  - {fileID: 978805515}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1227,7 +1235,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4305439224378070, guid: 73a5f393a939add4b83cbe95fc984dfe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -49
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4305439224378070, guid: 73a5f393a939add4b83cbe95fc984dfe, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1441,14 +1449,14 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44f3d0f3d5c79df4cb632e4f542b9eb3, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &902142863
+--- !u!1 &978805514
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 902142864}
+  - component: {fileID: 978805515}
   m_Layer: 0
   m_Name: Prefabs
   m_TagString: Untagged
@@ -1456,12 +1464,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &902142864
+--- !u!4 &978805515
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 902142863}
+  m_GameObject: {fileID: 978805514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1608,7 +1616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1193432064}
   m_Layer: 9
-  m_Name: Layer 0
+  m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

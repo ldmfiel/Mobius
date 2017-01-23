@@ -8,7 +8,7 @@ public class LevelExitComponent : MonoBehaviour {
     public string nextLevel;
     public string nextSpawnPoint;
 
-    bool canActivate;
+    public bool canActivate;
     RoomController roomControl;
 
 	// Use this for initialization

@@ -162,6 +162,8 @@
     <Compile Include="Assets\_GameScripts\Game\PixelPerfectOrthoCamera.cs" />
     <Compile Include="Assets\_GameScripts\Game\RoomController.cs" />
     <Compile Include="Assets\_GameScripts\Game\WrappingObjectComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Level\ActivateObjectOnTrigger.cs" />
+    <Compile Include="Assets\_GameScripts\Level\DeactivateOnUse.cs" />
     <Compile Include="Assets\_GameScripts\Level\DestroyThrownObjects.cs" />
     <Compile Include="Assets\_GameScripts\Level\ElevatorTriggerComponent.cs" />
     <Compile Include="Assets\_GameScripts\Level\KillVolumeComponent.cs" />

@@ -36,7 +36,7 @@ public class ElevatorTriggerComponent : MonoBehaviour {
                 elevatorPopup.ChangeOption(true);
             }
 
-            if (Input.GetButtonDown("Submit") && canActivate && elevatorPopup.menuOpen)
+            if (Input.GetButtonDown("Accept") && canActivate && elevatorPopup.menuOpen)
             {
                 elevatorPopup.GoToRoom();
 

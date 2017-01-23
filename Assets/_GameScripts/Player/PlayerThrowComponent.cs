@@ -22,7 +22,7 @@ public class PlayerThrowComponent : MonoBehaviour {
 
         if(direction == Vector2.down)
         {
-            thrownObject.GetComponent<ThrownObjectComponent>().StartThrow(distance, direction, new Vector3(0,-32));
+            thrownObject.GetComponent<ThrownObjectComponent>().StartThrow(distance, direction, new Vector3(0,-64));
         }
         else
         {
