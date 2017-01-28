@@ -97,7 +97,7 @@ MonoBehaviour:
   CrouchJumpBonus: 60
   FloorMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 768
   onFloor: 0
 --- !u!114 &114835672697351946
 MonoBehaviour:

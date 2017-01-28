@@ -21,3 +21,5 @@ EditorBuildSettings:
     path: Assets/_GameAssets/Levels/ElevatorF2.unity
   - enabled: 1
     path: Assets/_GameAssets/Levels/CorridorToDorms.unity
+  - enabled: 1
+    path: Assets/_GameAssets/Levels/Dorms.unity

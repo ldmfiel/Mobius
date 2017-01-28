@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThrownObjectComponent : MonoBehaviour {
+public class TeleporterObjectComponent : MonoBehaviour {
 
     public new Rigidbody2D rigidbody2D;
     BoxCollider2D box;
@@ -13,6 +13,10 @@ public class ThrownObjectComponent : MonoBehaviour {
     RaycastHit2D[] raycasts;
     public bool CanTeleportTo = false;
 
+    float distanceToTarget;
+    float StartDuration;
+    float Duration;
+    Vector2 Target;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +28,7 @@ public class ThrownObjectComponent : MonoBehaviour {
     void Update()
     {
         RaycastHit2D floorCheck = Physics2D.Linecast(transform.position, new Vector2(transform.position.x, transform.position.y) + (Vector2.down * 17), objectMask);
-
+        Duration -= Time.deltaTime;
         // While object has no collision check if it is in objects or falling down.
         if (box.isTrigger)
         {
@@ -34,11 +38,19 @@ public class ThrownObjectComponent : MonoBehaviour {
             bool inObject = raycasts.Length > 0;
             Debug.Log(inObject);
 
+            distanceToTarget = Vector2.Distance(transform.position, Target);
+
+            if (Duration <= (StartDuration/4))
+            {
+                rigidbody2D.gravityScale = 1;
+            }
+
             if (rigidbody2D.velocity.y < 0 && !inObject)
             {
-
                 GetComponent<BoxCollider2D>().isTrigger = false;
             }
+
+
         }
         //While objects collision is on
         else
@@ -46,8 +58,15 @@ public class ThrownObjectComponent : MonoBehaviour {
             // When object hits the floor let player teleport to object
             if (floorCheck && !CanTeleportTo)
             {
+                if (floorCheck.collider.tag == "Player")
+                {
+                    Destroy(gameObject);
+                }
+
                 CanTeleportTo = true;
             }
+
+
         }
 
         
@@ -59,12 +78,41 @@ public class ThrownObjectComponent : MonoBehaviour {
         Debug.Log(Vector3.right);
         Vector2 position = transform.position + offset;
         transform.position = position;
-        rigidbody2D.velocity = CalculateInitialVelocity(position + dir * newDistance,1.0f);
+        rigidbody2D.velocity = CalculateInitialVelocityFrisbee(position + dir * newDistance,1,dir);
     }
 
-    Vector3 CalculateInitialVelocity(Vector2 target, float duration)
+    Vector2 CalculateInitialVelocityFrisbee(Vector2 target, float duration, Vector2 dir)
     {
-        Vector2 finalVelocity = new Vector3();
+        Vector2 finalVelocity = new Vector2();
+
+        if(rigidbody2D)
+        {
+            Vector2 initialVelocity = new Vector2();
+
+            if(dir.y == 0)
+            {
+                distanceToTarget = target.x - transform.position.x;
+
+                initialVelocity.x = (distanceToTarget) / duration;
+            }
+            else
+            {
+                distanceToTarget = target.y - transform.position.y;
+
+                initialVelocity.y = distanceToTarget;
+            }
+            Target = target;
+            StartDuration = duration;
+            Duration = duration;
+            finalVelocity = initialVelocity;
+        }
+
+        return finalVelocity;
+    }
+
+    Vector2 CalculateInitialArcVelocity(Vector2 target, float duration)
+    {
+        Vector2 finalVelocity = new Vector2();
 
         if (rigidbody2D)
         {

@@ -64,16 +64,9 @@ public class PlayerControlComponent : MonoBehaviour {
                 }
 
                 if (Input.GetButtonDown("Jump") && movement.onFloor)
-                {
-                    if(Input.GetAxis("Vertical") < 0)
-                    {
-                        movement.DoJump(true);
-                    }
-                    else
-                    {
-                        movement.DoJump(false);
-                    }
-                    
+                {   
+                    // Enable crouch jump here if needed.
+                    movement.DoJump(false);
                 }
 
                 if (Input.GetButtonUp("Jump"))
@@ -89,20 +82,20 @@ public class PlayerControlComponent : MonoBehaviour {
                 {
                     if (Input.GetButtonDown("Fire1"))
                     {
-                        if (Teleporters[0] != null && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
+                        if (Teleporters[0] != null && Teleporters[0].GetComponent<TeleporterObjectComponent>().CanTeleportTo)
                             Destroy(Teleporters[0]);
                         if (Teleporters[0] == null)
-                            Teleporters[0] = throwing.QuickThrow(FacingDirection,220);                           
+                            Teleporters[0] = throwing.QuickThrow(FacingDirection,256);                           
                     }
                 }
                 else if(InputAxis.y > 0)
                 {
                     if (Input.GetButtonDown("Fire1"))
                     {
-                        if (Teleporters[0] != null && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
+                        if (Teleporters[0] != null && Teleporters[0].GetComponent<TeleporterObjectComponent>().CanTeleportTo)
                             Destroy(Teleporters[0]);
                         if (Teleporters[0] == null)
-                            Teleporters[0] = throwing.QuickThrow(Vector2.up,150);
+                            Teleporters[0] = throwing.QuickThrow(Vector2.up,225);
 
                     }
                 }
@@ -110,7 +103,7 @@ public class PlayerControlComponent : MonoBehaviour {
                 {
                     if (Input.GetButtonDown("Fire1"))
                     {
-                        if (Teleporters[0] != null && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
+                        if (Teleporters[0] != null && Teleporters[0].GetComponent<TeleporterObjectComponent>().CanTeleportTo)
                             Destroy(Teleporters[0]);
                         if(Teleporters[0] == null)
                             Teleporters[0] = throwing.QuickThrow(Vector2.down, 150);
@@ -120,11 +113,15 @@ public class PlayerControlComponent : MonoBehaviour {
                 // Teleport to the teleporter
                 if(Input.GetButtonDown("Fire2") && Teleporters[0])
                 {
-                    if(!Teleporters[0].GetComponent<BoxCollider2D>().isTrigger && Teleporters[0].GetComponent<ThrownObjectComponent>().CanTeleportTo)
+                    if(!Teleporters[0].GetComponent<BoxCollider2D>().isTrigger && Teleporters[0].GetComponent<TeleporterObjectComponent>().CanTeleportTo)
                     {
                         Debug.Log(Teleporters[0].transform.position);
                         transform.position = Teleporters[0].transform.position + new Vector3(0,33);
                         Destroy(Teleporters[0]);
+                    }
+                    else if(Teleporters[0].GetComponent<Rigidbody2D>().gravityScale == 0)
+                    {
+                        Teleporters[0].GetComponent<Rigidbody2D>().gravityScale = 1;
                     }
                 }
             }

@@ -163,6 +163,7 @@
     <Compile Include="Assets\_GameScripts\Game\RoomController.cs" />
     <Compile Include="Assets\_GameScripts\Game\WrappingObjectComponent.cs" />
     <Compile Include="Assets\_GameScripts\Level\ActivateObjectOnTrigger.cs" />
+    <Compile Include="Assets\_GameScripts\Level\CameraTransition.cs" />
     <Compile Include="Assets\_GameScripts\Level\DeactivateOnUse.cs" />
     <Compile Include="Assets\_GameScripts\Level\DestroyThrownObjects.cs" />
     <Compile Include="Assets\_GameScripts\Level\ElevatorTriggerComponent.cs" />
@@ -173,7 +174,7 @@
     <Compile Include="Assets\_GameScripts\Player\PlayerControlComponent.cs" />
     <Compile Include="Assets\_GameScripts\Player\PlayerMovementComponent.cs" />
     <Compile Include="Assets\_GameScripts\Player\PlayerThrowComponent.cs" />
-    <Compile Include="Assets\_GameScripts\Player\ThrownObjectComponent.cs" />
+    <Compile Include="Assets\_GameScripts\Player\TeleporterObjectComponent.cs" />
     <Compile Include="Assets\_GameScripts\UI\ElevatorDataComponent.cs" />
     <Compile Include="Assets\_GameScripts\UI\ElevatorPopup.cs" />
   </ItemGroup>

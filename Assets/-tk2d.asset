@@ -700,16 +700,73 @@ MonoBehaviour:
     - DarkGrey_Angle32x32
     - Orange_Box32x32
     - BLank
+    - 16x16
+    - Pipes_it1/0
+    - Pipes_it1/1
+    - Pipes_it1/2
+    - Pipes_it1/3
+    - Pipes_it1/4
+    - Pipes_it1/5
+    - Pipes_it1/6
+    - Pipes_it1/7
+    - Pipes_it1/8
+    - Pipes_it1/9
+    - Pipes_it1/10
+    - Pipes_it1/11
+    - Pipes_it1/12
+    - Pipes_it1/13
+    - Pipes_it1/14
+    - Pipes_it1/15
+    - Pipes_it1/16
+    - Pipes_it1/17
     spriteTextureGUIDs:
     - 389a1c9b35f81b546abf22c876a69e25
     - bf808bf758905c04c9d229beb2940edd
     - 9a636ac6a08843b48a6c450ea080b645
     - 3815eeb3a20969e4e8d7de0f81c68137
+    - 54004e9cac2cddb43869e15c47bed63d
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
+    - 9efee4bff5b668543a0779cd4ace78e1
     spriteTextureTimeStamps:
     - 1390860713
     - 1390860722
     - 1390860719
     - 1485117988.44989
+    - 1485604252.17323
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
+    - 1485458356.8905
     managedSpriteCollection: 0
     loadable: 1
     assetName: PrototypingSpriteCollection

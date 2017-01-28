@@ -16,7 +16,7 @@ public class DestroyThrownObjects : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.GetComponent<ThrownObjectComponent>())
+        if(col.gameObject.GetComponent<TeleporterObjectComponent>())
         {
             Destroy(col.gameObject);
         }

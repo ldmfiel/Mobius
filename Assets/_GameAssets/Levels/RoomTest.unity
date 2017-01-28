@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c47b2918814c7145bc5caa9a77cddf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentRoomName: CorridorToDorms
+  CurrentRoomName: Dorms
   CurrentRoom:
     RoomName: 
     DefaultSpawn: 
@@ -139,6 +139,11 @@ MonoBehaviour:
     spawnPoints:
     - DoorSpawn
     - ElevatorSpawn
+  - RoomName: Dorms
+    DefaultSpawn: PlayerSpawn
+    spawnPoints:
+    - PlayerSpawn
+    - ExitSpawn
   - RoomName: ElevatorF2
     DefaultSpawn: ElevatorSpawn
     spawnPoints:
