@@ -120,8 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentRoomName: Dorms
   CurrentRoom:
-    RoomName: 
-    DefaultSpawn: 
+    RoomName: Dorms
+    DefaultSpawn: PlayerSpawn
     spawnPoints: []
   Rooms:
   - RoomName: Prison

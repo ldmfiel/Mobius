@@ -43,6 +43,20 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tileInfo:
   - stringVal: 
     intVal: 0
@@ -137,11 +151,22 @@ MonoBehaviour:
     floatVal: 0
     enablePrefabOffset: 0
   tileMapLayers:
+  - name: Background
+    hash: 1982366824
+    useColor: 1
+    generateCollider: 1
+    z: 0.1
+    unityLayer: 0
+    sortingLayerName: 
+    sortingOrder: 0
+    skipMeshGeneration: 0
+    physicMaterial: {fileID: 0}
+    physicsMaterial2D: {fileID: 0}
   - name: Base
     hash: 1892887448
     useColor: 1
     generateCollider: 1
-    z: 0
+    z: 0.1
     unityLayer: 9
     sortingLayerName: 
     sortingOrder: 0

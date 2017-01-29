@@ -12,7 +12,7 @@ public class PlayerMovementComponent : MonoBehaviour {
     public bool Jumping;
     public float JumpVelocity = 240 ;
     public float CrouchJumpBonus = 60;
-    bool crouchJumping = false;
+    bool crouching;
 
     public LayerMask FloorMask;
     public bool onFloor;
@@ -30,26 +30,28 @@ public class PlayerMovementComponent : MonoBehaviour {
 
     public void Walk(Vector2 InputDirection)
     {
-        Vector3 velocity = rigidbody2D.velocity;
+        Vector2 velocity = rigidbody2D.velocity;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(0, -1),34, FloorMask);
 
-        if (!crouchJumping)
-        {
-            velocity.x = (WalkSpeed * InputDirection.x);
-        }
-        else
-        {
-            velocity.x = ((WalkSpeed/2) * InputDirection.x);
-        }
 
-        if(velocity.x < 0)
+        if (velocity.x < 0)
             velocity.x += (WalkDeceleration * Time.deltaTime);
         else if (velocity.x > 0)
             velocity.x -= (WalkDeceleration * Time.deltaTime);
 
+        if (!crouching)
+            velocity.x = WalkSpeed * InputDirection.x;
+        else
+            velocity.x = WalkSpeed / 2 * InputDirection.x;
+
+
+
+        // On floor
         if(hit)
         {
             Debug.Log(hit.collider.gameObject);
+
+            // If On moving object
             if (hit.collider.GetComponent<MoveObjectInDirectionComponent>() || (hit.collider.gameObject.tag == "Ghost" && movingObject != null))
             {
                 Debug.Log("On moving object");
@@ -66,8 +68,6 @@ public class PlayerMovementComponent : MonoBehaviour {
                 }
             }
 
-            if (crouchJumping)
-                crouchJumping = false;
             if (Jumping)
                 Jumping = false;
 
@@ -79,7 +79,6 @@ public class PlayerMovementComponent : MonoBehaviour {
             movingObject = null;
             onFloor = false;
         }
-
 
 
         rigidbody2D.velocity = velocity;
@@ -98,7 +97,6 @@ public class PlayerMovementComponent : MonoBehaviour {
         else if(!Jumping && crouchJump)
         {
             velocity.y = JumpVelocity + CrouchJumpBonus;
-            crouchJumping = true;
             Jumping = true;
         }
 

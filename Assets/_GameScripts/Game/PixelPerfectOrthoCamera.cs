@@ -8,9 +8,12 @@ public class PixelPerfectOrthoCamera : MonoBehaviour {
     public float ScreenHeight;
     public float PixelsPerUnit;
 
+
 	// Use this for initialization
 	void Start () {
         camera = GetComponent<Camera>();
+        ScreenWidth = Screen.width;
+        ScreenHeight = Screen.height;
         camera.orthographicSize = ScreenWidth / (((ScreenWidth / ScreenHeight) * 2) * PixelsPerUnit);
 	}
 	
