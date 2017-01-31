@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 114583570332929082}
   - component: {fileID: 61790585400876178}
   - component: {fileID: 114899815097392822}
+  - component: {fileID: 114629710427321272}
+  - component: {fileID: 114137704807542766}
   m_Layer: 8
   m_Name: PlayerObject
   m_TagString: Player
@@ -79,6 +81,18 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -4.9}
   serializedVersion: 2
   m_Size: {x: 19.8, y: 53.93}
+--- !u!114 &114137704807542766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650380074306240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab1727643f416f458323ba0c3cc6948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isVisible: 1
 --- !u!114 &114583570332929082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,10 +109,24 @@ MonoBehaviour:
   Jumping: 0
   JumpVelocity: 240
   CrouchJumpBonus: 60
+  crouching: 0
   FloorMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 512
   onFloor: 0
+--- !u!114 &114629710427321272
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650380074306240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1cfe43b63f42649960e95fb19615a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Walking
+  maxDistance: 100
 --- !u!114 &114835672697351946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FacingDirection: {x: 1, y: 0}
   Teleporters: []
+  crouchSprite: {fileID: 21300000, guid: 9a636ac6a08843b48a6c450ea080b645, type: 3}
 --- !u!114 &114899815097392822
 MonoBehaviour:
   m_ObjectHideFlags: 1

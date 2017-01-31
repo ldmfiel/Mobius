@@ -27,12 +27,21 @@ public class PlayerControlComponent : MonoBehaviour {
 
     SpriteRenderer spriteRender;
 
+
+    //For prototype crouching
+    public Sprite crouchSprite;
+    Vector2 defaultBoxSize;
+    Vector2 defaultBoxOffset;
+    Sprite walkingSprite;
 	// Use this for initialization
 	void Start () {
         Teleporters = new GameObject[MaxTeleporters];
         movement = GetComponent<PlayerMovementComponent>();
         throwing = GetComponent<PlayerThrowComponent>();
         spriteRender = GetComponent<SpriteRenderer>();
+        defaultBoxSize = GetComponent<BoxCollider2D>().size;
+        defaultBoxOffset = GetComponent<BoxCollider2D>().offset;
+        walkingSprite = spriteRender.sprite;
 	}
 	
 	// Update is called once per frame
@@ -50,6 +59,23 @@ public class PlayerControlComponent : MonoBehaviour {
         {
             if (movement)
             {
+                if(Input.GetAxis("Crouch") >= 0.1f && !movement.crouching)
+                {
+                    GetComponent<BoxCollider2D>().size = new Vector2(32, 32);
+                    transform.position += new Vector3(0, -16);
+                    GetComponent<BoxCollider2D>().offset = Vector2.zero;
+                    spriteRender.sprite = crouchSprite;
+                    movement.crouching = true;
+                }
+                else if(Input.GetAxis("Crouch") <= 0.1f && movement.crouching)
+                {
+                    GetComponent<BoxCollider2D>().size = defaultBoxSize;
+                    transform.position += new Vector3(0, +16);
+                    GetComponent<BoxCollider2D>().offset = defaultBoxOffset;
+                    spriteRender.sprite = walkingSprite;
+                    movement.crouching = false;
+                }
+
                 movement.Walk(InputAxis);
 
                 if(InputAxis.x < 0)

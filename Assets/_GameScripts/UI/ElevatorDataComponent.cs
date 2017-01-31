@@ -16,7 +16,9 @@ public class ElevatorDataComponent : MonoBehaviour
 	public float PopupOffsetY;
 	public float BoxWidth = 100;
 	public float ArrowOffset = 15;
-	public GUIStyle menuStyle;
+    public Texture2D Arrow;
+	//public GUIStyle menuStyle;
+    public GUISkin menuSkin;
 
 	public ElevatorData[] DataArray;
 }

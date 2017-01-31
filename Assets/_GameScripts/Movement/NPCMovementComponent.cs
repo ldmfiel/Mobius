@@ -7,6 +7,7 @@ public class NPCMovementComponent : MonoBehaviour {
     new Rigidbody2D rigidBody2D;
     SpriteRenderer sprite;
     public float WalkSpeed;
+    public Vector2 facingDirection;
 
     //Patrol Variables
     bool A = true;
@@ -19,15 +20,22 @@ public class NPCMovementComponent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(rigidBody2D.velocity.x < 0)
+		if(rigidBody2D.velocity.x < -1)
         {
             sprite.flipX = true;
+            facingDirection = Vector2.left;
         }
-        else
+        else if (rigidBody2D.velocity.x > 1)
         {
             sprite.flipX = false;
+            facingDirection = Vector2.right;
         }
 	}
+
+    public void Walk(Vector3 dir)
+    {
+        rigidBody2D.velocity = new Vector2(dir.x * WalkSpeed, rigidBody2D.velocity.y);
+    }
 
     public void Patrol(Vector3 posA, Vector3 posB)
     {
@@ -39,7 +47,7 @@ public class NPCMovementComponent : MonoBehaviour {
         
         if(A)
         {
-            Debug.Log("Approaching A" + distanceB);
+            //Debug.Log("Approaching A" + distanceB);
             direction = (posA - transform.position).normalized;
             
             if(distanceB > Distance || rigidBody2D.velocity.x == 0)
@@ -49,7 +57,7 @@ public class NPCMovementComponent : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Approaching B" + distanceA);
+            //Debug.Log("Approaching B" + distanceA);
             direction = (posB - transform.position).normalized;
 
             if (distanceA > Distance || rigidBody2D.velocity.x == 0)
@@ -59,8 +67,20 @@ public class NPCMovementComponent : MonoBehaviour {
         }
 
 
-        rigidBody2D.velocity = new Vector2(direction.x * WalkSpeed, rigidBody2D.velocity.y);
+        Walk(direction);
 
+    }
+
+    public Vector3 GetDirectionToVector(Vector3 pos)
+    {
+        Vector3 dir = (pos - transform.position).normalized;
+
+        return dir;
+    }
+
+    public void StopMoving()
+    {
+        rigidBody2D.velocity = Vector2.zero;
     }
 }
 

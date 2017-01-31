@@ -12,9 +12,10 @@ public class ElevatorPopup : MonoBehaviour
 	float textOffset = 5; //offset for each line of text
 	int numberOfLines, currentLine; //number of lines needed and the current line we are on when drawing
 	Camera worldCamera; //reference to the camera, so we can convert to screenspace
-	Vector3 screenPosition; //the screen position of the gameobject in world
+	//Vector3 screenPosition; //the screen position of the gameobject in world
 	int currentOption = 1; //the current option we have selected
     RoomController roomControl;
+    
 
 	// Set up all variables
 	void Start () 
@@ -36,8 +37,8 @@ public class ElevatorPopup : MonoBehaviour
 
         roomControl = GameObject.Find("RoomController").GetComponent<RoomController>();
 
-		//Debug.Log (elevatorComponent.DataArray.Length);
-		//OpenMenu ();
+        //Debug.Log (elevatorComponent.DataArray.Length);
+        //OpenMenu ();
 	}
 
 	void Update()
@@ -46,11 +47,13 @@ public class ElevatorPopup : MonoBehaviour
         if(menuOpen)
         {
             //set screen position depending on objects world position
-            screenPosition = worldCamera.WorldToScreenPoint(transform.position);
-            Debug.Log(screenPosition);
+            //screenPosition = worldCamera.WorldToScreenPoint(transform.position);
+            boxPosition.x = Screen.width / 2 - elevatorComponent.BoxWidth / 2;
+            boxPosition.y = 15;
+            //Debug.Log(screenPosition);
             //draw box with the offsets
-            boxPosition.x = screenPosition.x + elevatorComponent.PopupOffsetX;
-            boxPosition.y = screenPosition.y + elevatorComponent.PopupOffsetY;
+            //boxPosition.x = screenPosition.x + elevatorComponent.PopupOffsetX;
+            //boxPosition.y = screenPosition.y + elevatorComponent.PopupOffsetY;
 
             //make sure text starts drawing where the box is, with an offset
             textStartPos.x = boxPosition.x + textOffset;
@@ -123,19 +126,22 @@ public class ElevatorPopup : MonoBehaviour
 		//if the menu is open, drawn the box and text
 		if (menuOpen == true) 
 		{
-			//draw the background box at specified width and to the correct height depending on amount of available rooms
+            GUI.skin = elevatorComponent.menuSkin;
+            
+            //draw the background box at specified width and to the correct height depending on amount of available rooms
 			GUI.Box(new Rect(boxPosition.x, boxPosition.y, elevatorComponent.BoxWidth, 15 + (15 * numberOfLines)), Texture2D.blackTexture);
-		
-			//draw the arrow on the screen
-			GUI.Box(new Rect(boxPosition.x + elevatorComponent.BoxWidth / 6 * 4, boxPosition.y - 5 + elevatorComponent.ArrowOffset * currentOption, 20, 10), Texture2D.blackTexture);
 
-			//draw each room name in order
-			foreach (ElevatorDataComponent.ElevatorData room in elevatorComponent.DataArray)
+            //draw the arrow on the screen
+            //GUI.Box(new Rect(boxPosition.x + elevatorComponent.BoxWidth / 6 * 4, boxPosition.y - 5 + elevatorComponent.ArrowOffset * currentOption, 20, 10), Texture2D.blackTexture);
+            GUI.DrawTexture(new Rect(boxPosition.x + elevatorComponent.BoxWidth / 6 * 4, boxPosition.y - 5 + elevatorComponent.ArrowOffset * currentOption, 20, 10), elevatorComponent.Arrow);
+
+            //draw each room name in order
+            foreach (ElevatorDataComponent.ElevatorData room in elevatorComponent.DataArray)
 			{
 				//if the room is accessible, draw on screen
 				if (room.CanAccess == true) 
 				{
-					GUI.Label (new Rect (textStartPos.x + 5, textStartPos.y + textOffset, 350, 40), room.RoomName, elevatorComponent.menuStyle);
+					GUI.Label (new Rect (textStartPos.x + 5, textStartPos.y + textOffset, 350, 40), room.RoomName);
 					CheckLine ();
 				}
 			}

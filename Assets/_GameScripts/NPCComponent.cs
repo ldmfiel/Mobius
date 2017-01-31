@@ -15,6 +15,7 @@ public class NPCComponent : MonoBehaviour {
     public string name = "Jerry";
     public NPCState currentState;
     public NPCMovementComponent movement;
+    public AISense sense;
 
 
     public NPCState[] states;
@@ -22,6 +23,7 @@ public class NPCComponent : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         movement = GetComponent<NPCMovementComponent>();
+        sense = GetComponent<AISense>();
         SwitchState("Idle");
 	}
 	

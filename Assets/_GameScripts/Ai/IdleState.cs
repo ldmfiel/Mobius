@@ -19,6 +19,11 @@ public class IdleState : AIState {
 		
 	}
 
+    void OnEnable()
+    {
+        Invoke("EndIdle", IdleTime);
+    }
+
     void EndIdle()
     {
         owner.SwitchState(StateToSwitchTo);

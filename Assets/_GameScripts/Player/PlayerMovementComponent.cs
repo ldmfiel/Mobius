@@ -12,7 +12,7 @@ public class PlayerMovementComponent : MonoBehaviour {
     public bool Jumping;
     public float JumpVelocity = 240 ;
     public float CrouchJumpBonus = 60;
-    bool crouching;
+    public bool crouching;
 
     public LayerMask FloorMask;
     public bool onFloor;
@@ -33,6 +33,10 @@ public class PlayerMovementComponent : MonoBehaviour {
         Vector2 velocity = rigidbody2D.velocity;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(0, -1),34, FloorMask);
 
+        if((InputDirection.x <= -0.1f || InputDirection.x >= 0.1f) && !crouching)
+        {
+            SendMessage("SoundMade", "Walking");
+        }
 
         if (velocity.x < 0)
             velocity.x += (WalkDeceleration * Time.deltaTime);
@@ -40,7 +44,9 @@ public class PlayerMovementComponent : MonoBehaviour {
             velocity.x -= (WalkDeceleration * Time.deltaTime);
 
         if (!crouching)
-            velocity.x = WalkSpeed * InputDirection.x;
+        {
+            velocity.x = WalkSpeed * InputDirection.x;            
+        }            
         else
             velocity.x = WalkSpeed / 2 * InputDirection.x;
 
@@ -88,17 +94,13 @@ public class PlayerMovementComponent : MonoBehaviour {
     {
         Vector3 velocity = rigidbody2D.velocity;
 
-        if(!Jumping && !crouchJump)
+        if(!Jumping)
         {
             // Start Jump
             velocity.y = JumpVelocity;
             Jumping = true;
         }
-        else if(!Jumping && crouchJump)
-        {
-            velocity.y = JumpVelocity + CrouchJumpBonus;
-            Jumping = true;
-        }
+
 
         rigidbody2D.velocity = velocity;
     }
