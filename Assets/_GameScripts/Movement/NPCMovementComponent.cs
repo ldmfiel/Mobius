@@ -20,16 +20,18 @@ public class NPCMovementComponent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if(rigidBody2D.velocity.x < -1)
         {
-            sprite.flipX = true;
             facingDirection = Vector2.left;
         }
         else if (rigidBody2D.velocity.x > 1)
         {
-            sprite.flipX = false;
             facingDirection = Vector2.right;
         }
+
+        if(facingDirection.x < 0) { sprite.flipX = true; };
+        if(facingDirection.x > 0) { sprite.flipX = false; };
 	}
 
     public void Walk(Vector3 dir)
